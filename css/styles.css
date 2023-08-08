@@ -28,6 +28,7 @@ header{
     color: white;
     text-decoration: none;
     font-weight: 500;
+    font-size: 10px;
     padding: 10px ;
     transition: all 0.8s;
     font-family:Arial, Helvetica, sans-serif;
@@ -164,7 +165,7 @@ body{
 .text-about {
     color: white;
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 5px;
     padding: 10px;
@@ -179,7 +180,7 @@ body{
 .box-age-live p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
 }
 .box-age-live i {
@@ -189,7 +190,7 @@ body{
 .btn-cv{
     padding: 10px 25px;
     margin: 15px 0px;
-    width: 30%;
+    width: 35%;
     text-align: center;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -228,10 +229,11 @@ body{
 }
 .title-f-b-t{
     color: white;
+    font-size: 20px;
     margin: 5px;
 }
 .box-title-skill i {
-    font-size: 25px;
+    font-size: 20px;
     color: #fa2b7e;
 }
 .container-front-back-tools{
@@ -256,6 +258,7 @@ body{
 }
 .name-icon{
     color: white;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .box-skill-icon{
@@ -330,12 +333,13 @@ body{
     bottom: 0%;
 }
 .title-text{
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(47, 47, 47);
 }
 .sub-title{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     padding: 5px;
     color: rgb(47, 47, 47);
     text-align: center;
@@ -376,7 +380,6 @@ body{
     /* box-shadow: 0px 0px 14px -1px rgba(255,255,255,0.5) */;
 }
 .box-contact{
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -436,16 +439,41 @@ body{
     padding: 10px;
     color: white;
 }
+@media(min-width:500px){
+    .menu li a{
+        font-size: 15px;
+    }
+    .title-f-b-t{
+        font-size: 25px;
+    }
+    .name-icon{
+        font-size: 17px;
+    }
+    .title-text{
+        font-size: 30px;
+    }
+    .sub-title{
+        font-size: 16px;
+    }
+}
 @media (min-width: 800px) {
     .container-general{
         width: 90%;
         margin: auto;
     }
+    .menu li a{
+        font-size: 18px;
+    }
     .container-about-img-text{
-        /* border: yellow dashed 2px; */
         width: 100%;
         flex-direction: row;
         box-sizing: border-box;
+    }
+    .text-about{
+        font-size: 18px;
+    }
+    .box-age-live p{
+        font-size: 16px;
     }
     .about-icon{
         width: 50%;
@@ -501,8 +529,11 @@ body{
     .box-title-skill{
         justify-content: center;
     }
+    .box-skill-icon{
+        padding: 10px 0px;
+    }
     .img-text{
-        margin: 5px;
+        margin: 2px;
         box-sizing: border-box;
     }
     .box-contact{
